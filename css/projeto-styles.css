@@ -503,6 +503,7 @@ h4 {
     vertical-align: top;
     padding-left: 20px;
     background-color: #fff;
+    margin-left: -6px;
     /* identify width, 1x1 */
     width: 458px;
   }
