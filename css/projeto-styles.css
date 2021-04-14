@@ -185,6 +185,10 @@ footer {
   margin-bottom: 7px;
 }
 
+.video-wrapper.frameworks{
+  padding-top: 56%;
+}
+
 .video-wrapper iframe {
   position: absolute;
   top: 0;
@@ -287,6 +291,7 @@ h4 {
     float: none;
     padding: 0 1.5vw;
     display: none;
+    text-decoration: none;
   }
   /* hover triggers */
   .work-drop:hover {
@@ -338,6 +343,7 @@ h4 {
     float: none;
     padding: 0 2vw;
     display: none;
+    text-decoration: none;
   }
   /* hover triggers */
   .contact-drop:hover {
