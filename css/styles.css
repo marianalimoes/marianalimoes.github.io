@@ -15,7 +15,7 @@ body {
 
 #wrapper {
   position: relative;
-  margin: 2vw 4vw;
+  margin: 4vw 4vw;
 }
 
 /* header */
@@ -38,7 +38,7 @@ header {
 .logo-img {
   min-width: 160px;
   max-width: 215px;
-  width: 62.5vw;
+  width: 55vw;
   height: auto;
   position: relative;
 }
