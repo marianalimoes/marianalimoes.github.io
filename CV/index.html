@@ -14,16 +14,22 @@
 
 <body id="cv">
     <div id="wrapper">
-        <?php
+        <header>
+            <div id="logo">
+                <figure><a href="../">
+                        <img class="logo-img" src="../data/000_logo/LOGO.svg" alt="mariana limoes logo" />
+                    </a></figure>
+            </div>
 
-        $logo = "../data/000_logo/LOGO.svg";
-        $home = "";
-        $link1 = "about";
-        $a1 = "../about/";
-        $link2 = "portfolio";
-        $a2 = "../";
-
-        include '../header.php'; ?>
+            <nav>
+                <div class="ext-link">
+                    <a href="../about/" class="hover">about</a>
+                </div>
+                <div class="ext-link">
+                    <a href="../" class="hover">portfolio</a>
+                </div>
+            </nav>
+        </header>
 
         <div id="content">
             <div id="profile">
