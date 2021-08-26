@@ -94,11 +94,16 @@ button.accordion {
   padding-bottom: 20px;
 }
 
-#projects article p {
-  padding: 20px 20px 5px;
+#projects article p:first-of-type {
+  margin-top: 20px;
 }
-#projects article p:last-of-type {
-  margin-bottom: 20px;
+
+#projects article p, #projects article ol, #projects article ul {
+  padding: 0 20px 20px;
+}
+
+#projects article ol, #projects article ul {
+  margin-left: 20px;
 }
 
 /* accordion */
@@ -500,7 +505,7 @@ h4:after {
     width: auto;
     flex-grow: 1;
     align-self: center;
-    padding: 10px;
+    padding-left: 20px;
   }
 
   #pc-navbar a,
@@ -516,6 +521,12 @@ h4:after {
   /* whole */
   .work-drop {
     overflow: hidden;
+    height: 50px;
+  }
+
+  .work-btn {
+    /* align-self: center;
+    flex-grow: 0; */
   }
   /* categories */
   .work-content {
@@ -685,6 +696,10 @@ h4:after {
     top: 20px;
     white-space: normal;
   }
+
+  #projects article p:first-of-type {
+    margin-top: 0;
+}
 }
 /* END OF DESKTOP ou MOBILE:LANDSCAPE */
 
@@ -771,7 +786,7 @@ a {
 }
 
 strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 footer p {
@@ -796,6 +811,10 @@ button {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 400;
   font-size: 1rem;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 .hover {
