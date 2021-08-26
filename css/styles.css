@@ -82,12 +82,23 @@ button.accordion {
 }
 
 #projects h1 {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 #projects h2 {
   padding-bottom: 20px;
   padding-top: 20px;
+}
+
+#Interactive {
+  border-top: solid 1.5px #111;
+}
+
+#Editorial,
+#Branding,
+#Play {
+  margin-top: 40px;
+  border-top: solid 1.5px #111;
 }
 
 #projects .proj {
@@ -377,6 +388,10 @@ h4:after {
 
   header {
     margin-bottom: 40px;
+  }
+
+  #projects h1 {
+    padding-top: 20px;
   }
 
   .proj:first-child h2 {
