@@ -559,20 +559,22 @@ h4:after {
   }
 
   /* hover triggers */
-  .work-drop:hover {
+  .work-drop:hover, .work-drop:active {
     width: 45vw;
   }
-  .work-drop:hover .work-content {
+  .work-drop:hover .work-content,.work-drop:active .work-content {
     opacity: 1;
   }
-  .work-drop:hover .work-content a {
+  .work-drop:hover .work-content a, .work-drop:active .work-content a {
     display: inline-block;
   }
-  .work-content a:hover {
+  .work-content a:hover, .work-content a:active {
     color: #999;
   }
   #pc-navbar a:hover,
-  .work-drop:hover .work-btn {
+  .work-drop:hover .work-btn,
+  #pc-navbar a:active,
+  .work-drop:active .work-btn {
     color: #999;
   }
 
@@ -839,6 +841,18 @@ ol {
 .hover:active,
 .hover:hover {
   text-decoration: underline;
+}
+
+.proj a.ext {
+  text-decoration: none!important;
+}
+
+.proj a.ext:hover span {
+  text-decoration: underline;
+}
+
+.proj a.ext:before {
+    content: "↗  ";
 }
 
 /* ABOUT */
