@@ -1,5 +1,3 @@
-// only smartphone
-
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -12,7 +10,8 @@ if (matchMedia) {
 
 // media query change
 function WidthChange(mq) {
-  if (mq.matches) {
+  if (mq.matches) { /* mobile abaixo de 1025px */
+    /* por cada accordion */
     for (i = 0; i < acc.length; i++) {
       acc[i].addEventListener("click", function () {
 
@@ -24,7 +23,7 @@ function WidthChange(mq) {
           panel.style.maxHeight = null;
         } else {
           panel.style.maxHeight = panel.scrollHeight + "px";
-          window.scrollBy(0,200);
+          window.scrollBy(0, 200);
         }
 
       });
@@ -43,6 +42,29 @@ function WidthChange(mq) {
         }
       }
 
+    }
+  } else {
+
+    window.onload = function get_body() {
+
+      body = document.getElementsByTagName('body')[0];
+
+      for (i = 0; i < acc.length; i++) {
+
+        var accRect = acc[i].getBoundingClientRect();
+
+        body.addEventListener('mousemove', function (event) {
+          
+          if (event.clientX >= accRect.left && event.clientX <= accRect.right &&
+            event.clientY >= accRect.top && event.clientY <= accRect.bottom) {
+
+              /* why not working? */
+            acc[i].classList.add("active");
+            console.log("in");
+          }
+        }, false);
+
+      }
     }
   }
 }
