@@ -698,20 +698,9 @@ h4:after {
     transition: padding-left 0.4s;
     padding-left: 0;
   }
-  
+  #projects .accordion:hover,
   #projects .accordion.active {
     padding-left: 450px;
-  }
-
-  #projects .accordion + .panel .caption {
-    opacity: 0;
-    transition: opacity 1s ease;
-  }
-
-  
-  #projects .accordion.active + .panel .caption {
-    opacity: 1;
-    z-index:10;
   }
 
   #projects .caption {
